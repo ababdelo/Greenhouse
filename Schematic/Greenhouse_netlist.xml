@@ -1,411 +1,415 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!-- Created with Fritzing (http://www.fritzing.org/) -->
-<netlist sketch="Greenhouse.fzz" date="Fri Mar 17 17:49:18 2023">
+<netlist date="Sun Mar 26 11:27:56 2023" sketch="Greenhouse.fzz">
  <net>
-  <connector id="connector1" name="GND">
-   <part id="190510" label="F3" title="Fan - Ventilador"/>
+  <connector name="wiper" id="connector1">
+   <part title="Rotary Potentiometer (Small)" id="200140" label="R2"/>
   </connector>
-  <connector id="connector5" name="NO">
-   <part id="107930" label="KY-2" title="Keyes Relay"/>
-  </connector>
-  <connector id="connector1" name="pin2">
-   <part id="191450" label="J7" title="Peltier Element"/>
+  <connector name="A3" id="connector3">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
   </connector>
  </net>
  <net>
-  <connector id="connector0" name="pin1">
-   <part id="191450" label="J7" title="Peltier Element"/>
+  <connector name="leg2" id="connector2">
+   <part title="Rotary Potentiometer (Small)" id="200140" label="R2"/>
   </connector>
-  <connector id="connector1" name="C">
-   <part id="162910" label="D2" title="Diode"/>
+  <connector name="leg2" id="connector2">
+   <part title="Rotary Potentiometer (Small)" id="199950" label="R1"/>
   </connector>
-  <connector id="connector0" name="5V">
-   <part id="190510" label="F3" title="Fan - Ventilador"/>
+  <connector name="Vin" id="connector1">
+   <part title="KY-015 Temperature &amp; Humidity Sensor Module" id="182620" label="Mod1"/>
   </connector>
-  <connector id="connector0" name="5V">
-   <part id="188720" label="F2" title="Fan - Ventilador"/>
+  <connector name="5V" id="connector87">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
   </connector>
- </net>
- <net>
-  <connector id="connector1" name="GND">
-   <part id="188720" label="F2" title="Fan - Ventilador"/>
+  <connector name="power" id="connector1">
+   <part title="Keyes Relay" id="154210" label="KY-3"/>
   </connector>
-  <connector id="connector5" name="NO">
-   <part id="154210" label="KY-3" title="Keyes Relay"/>
+  <connector name="5V" id="connector40">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
   </connector>
-  <connector id="connector1" name="2">
-   <part id="170560" label="BULB1" title="Incandescent light bulb small"/>
+  <connector name="power" id="connector1">
+   <part title="Keyes Relay" id="106430" label="KY-1"/>
   </connector>
-  <connector id="connector0" name="pin1">
-   <part id="134600" label="J3" title="Peltier Element"/>
+  <connector name="power" id="connector1">
+   <part title="Keyes Relay" id="107930" label="KY-2"/>
   </connector>
- </net>
- <net>
-  <connector id="connector0" name="A">
-   <part id="162910" label="D2" title="Diode"/>
+  <connector name="VCC" id="connector2">
+   <part title="Soil Moisture Sensor" id="107000" label="Part3"/>
   </connector>
-  <connector id="connector2" name="PWR">
-   <part id="173420" label="J6" title="Power Jack"/>
+  <connector name="VCC" id="connector1">
+   <part title="LCD1602-I2C" id="106940" label="Part2"/>
   </connector>
-  <connector id="connector0" name="A">
-   <part id="168110" label="D4" title="Diode"/>
-  </connector>
-  <connector id="connector0" name="1">
-   <part id="170560" label="BULB1" title="Incandescent light bulb small"/>
-  </connector>
-  <connector id="connector0" name="A">
-   <part id="165450" label="D3" title="Diode"/>
+  <connector name="VCC" id="connector7">
+   <part title="Soil Moisture Sensor" id="107000" label="Part3"/>
   </connector>
  </net>
  <net>
-  <connector id="connector4" name="C">
-   <part id="154210" label="KY-3" title="Keyes Relay"/>
+  <connector name="leg1" id="connector0">
+   <part title="Rotary Potentiometer (Small)" id="200140" label="R2"/>
   </connector>
-  <connector id="connector1" name="GND">
-   <part id="173420" label="J6" title="Power Jack"/>
+  <connector name="cathode" id="connector0">
+   <part title="Blue (470nm) LED" id="141540" label="LED2"/>
   </connector>
-  <connector id="connector4" name="C">
-   <part id="107930" label="KY-2" title="Keyes Relay"/>
+  <connector name="-" id="connector2">
+   <part title="KY-015 Temperature &amp; Humidity Sensor Module" id="182620" label="Mod1"/>
   </connector>
-  <connector id="connector4" name="C">
-   <part id="106430" label="KY-1" title="Keyes Relay"/>
+  <connector name="ground" id="connector2">
+   <part title="Keyes Relay" id="154210" label="KY-3"/>
   </connector>
- </net>
- <net>
-  <connector id="connector1" name="C">
-   <part id="168110" label="D4" title="Diode"/>
+  <connector name="leg1" id="connector0">
+   <part title="Rotary Potentiometer (Small)" id="199950" label="R1"/>
   </connector>
-  <connector id="connector1" name="pin2">
-   <part id="134600" label="J3" title="Peltier Element"/>
+  <connector name="cathode" id="connector0">
+   <part title="Red (633nm) LED" id="112060" label="LED1"/>
   </connector>
- </net>
- <net>
-  <connector id="connector1" name="C">
-   <part id="165450" label="D3" title="Diode"/>
+  <connector name="cathode" id="connector0">
+   <part title="Yellow (595nm) LED" id="143020" label="LED3"/>
   </connector>
-  <connector id="connector1" name="pin 2">
-   <part id="108260" label="WATER PUMP1" title="water pump/motor"/>
+  <connector name="GND" id="connector0">
+   <part title="LCD1602-I2C" id="106940" label="Part2"/>
   </connector>
- </net>
- <net>
-  <connector id="connector90" name="VIN">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="GND" id="connector6">
+   <part title="Soil Moisture Sensor" id="107000" label="Part3"/>
   </connector>
-  <connector id="connector2" name="PWR">
-   <part id="158050" label="J5" title="Power Jack"/>
+  <connector name="GND" id="connector3">
+   <part title="Soil Moisture Sensor" id="107000" label="Part3"/>
   </connector>
- </net>
- <net>
-  <connector id="connector1" name="GND">
-   <part id="158050" label="J5" title="Power Jack"/>
+  <connector name="ground" id="connector2">
+   <part title="Keyes Relay" id="107930" label="KY-2"/>
   </connector>
-  <connector id="connector88" name="GND">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="ground" id="connector2">
+   <part title="Keyes Relay" id="106430" label="KY-1"/>
   </connector>
-  <connector id="connector57" name="GND">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="GND" id="connector89">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
   </connector>
-  <connector id="connector89" name="GND">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="GND" id="connector88">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
   </connector>
-  <connector id="connector44" name="GND">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="GND" id="connector57">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
   </connector>
-  <connector id="connector0" name="GND">
-   <part id="106940" label="Part2" title="LCD1602-I2C"/>
+  <connector name="GND" id="connector44">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
   </connector>
-  <connector id="connector6" name="GND">
-   <part id="107000" label="Part3" title="Soil Moisture Sensor"/>
-  </connector>
-  <connector id="connector2" name="ground">
-   <part id="107930" label="KY-2" title="Keyes Relay"/>
-  </connector>
-  <connector id="connector3" name="GND">
-   <part id="107000" label="Part3" title="Soil Moisture Sensor"/>
-  </connector>
-  <connector id="connector2" name="ground">
-   <part id="106430" label="KY-1" title="Keyes Relay"/>
-  </connector>
-  <connector id="connector0" name="cathode">
-   <part id="147480" label="LED4" title="Green (555nm) LED"/>
-  </connector>
-  <connector id="connector0" name="cathode">
-   <part id="141540" label="LED2" title="Blue (470nm) LED"/>
-  </connector>
-  <connector id="connector2" name="-">
-   <part id="182620" label="Mod1" title="KY-015 Temperature &amp; Humidity Sensor Module"/>
-  </connector>
-  <connector id="connector2" name="ground">
-   <part id="154210" label="KY-3" title="Keyes Relay"/>
-  </connector>
-  <connector id="connector0" name="cathode">
-   <part id="143020" label="LED3" title="Yellow (595nm) LED"/>
-  </connector>
-  <connector id="connector0" name="cathode">
-   <part id="112060" label="LED1" title="Red (633nm) LED"/>
+  <connector name="GND" id="connector1">
+   <part title="Power Jack" id="158050" label="J5"/>
   </connector>
  </net>
  <net>
-  <connector id="connector0" name="signal">
-   <part id="154210" label="KY-3" title="Keyes Relay"/>
+  <connector name="A2" id="connector2">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
   </connector>
-  <connector id="connector66" name="D5 PWM">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
-  </connector>
- </net>
- <net>
-  <connector id="connector1" name="power">
-   <part id="154210" label="KY-3" title="Keyes Relay"/>
-  </connector>
-  <connector id="connector1" name="Vin">
-   <part id="182620" label="Mod1" title="KY-015 Temperature &amp; Humidity Sensor Module"/>
-  </connector>
-  <connector id="connector87" name="5V">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
-  </connector>
-  <connector id="connector40" name="5V">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
-  </connector>
-  <connector id="connector1" name="power">
-   <part id="106430" label="KY-1" title="Keyes Relay"/>
-  </connector>
-  <connector id="connector1" name="power">
-   <part id="107930" label="KY-2" title="Keyes Relay"/>
-  </connector>
-  <connector id="connector1" name="VCC">
-   <part id="106940" label="Part2" title="LCD1602-I2C"/>
-  </connector>
-  <connector id="connector2" name="VCC">
-   <part id="107000" label="Part3" title="Soil Moisture Sensor"/>
-  </connector>
-  <connector id="connector7" name="VCC">
-   <part id="107000" label="Part3" title="Soil Moisture Sensor"/>
+  <connector name="wiper" id="connector1">
+   <part title="Rotary Potentiometer (Small)" id="199950" label="R1"/>
   </connector>
  </net>
  <net>
-  <connector id="connector52" name="D9 PWM">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="D9 PWM" id="connector52">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
   </connector>
-  <connector id="connector1" name="anode">
-   <part id="112060" label="LED1" title="Red (633nm) LED"/>
-  </connector>
- </net>
- <net>
-  <connector id="connector51" name="D8">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
-  </connector>
-  <connector id="connector1" name="anode">
-   <part id="141540" label="LED2" title="Blue (470nm) LED"/>
+  <connector name="anode" id="connector1">
+   <part title="Red (633nm) LED" id="112060" label="LED1"/>
   </connector>
  </net>
  <net>
-  <connector id="connector68" name="D7">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="D8" id="connector51">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
   </connector>
-  <connector id="connector1" name="anode">
-   <part id="143020" label="LED3" title="Yellow (595nm) LED"/>
-  </connector>
- </net>
- <net>
-  <connector id="connector67" name="D6 PWM">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
-  </connector>
-  <connector id="connector1" name="anode">
-   <part id="147480" label="LED4" title="Green (555nm) LED"/>
+  <connector name="anode" id="connector1">
+   <part title="Blue (470nm) LED" id="141540" label="LED2"/>
   </connector>
  </net>
  <net>
-  <connector id="connector0" name="signal">
-   <part id="107930" label="KY-2" title="Keyes Relay"/>
+  <connector name="D7" id="connector68">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
   </connector>
-  <connector id="connector65" name="D4">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
-  </connector>
- </net>
- <net>
-  <connector id="connector1" name="A1">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
-  </connector>
-  <connector id="connector0" name="S">
-   <part id="182620" label="Mod1" title="KY-015 Temperature &amp; Humidity Sensor Module"/>
+  <connector name="anode" id="connector1">
+   <part title="Yellow (595nm) LED" id="143020" label="LED3"/>
   </connector>
  </net>
  <net>
-  <connector id="connector3" name="SCL">
-   <part id="106940" label="Part2" title="LCD1602-I2C"/>
+  <connector name="D6 PWM" id="connector67">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
   </connector>
-  <connector id="connector5" name="A5/SCL">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
-  </connector>
-  <connector id="connector60" name="A5/SCL">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="anode" id="connector1">
+   <part title="Green (555nm) LED" id="147480" label="LED4"/>
   </connector>
  </net>
  <net>
-  <connector id="connector2" name="SDA">
-   <part id="106940" label="Part2" title="LCD1602-I2C"/>
+  <connector name="GND" id="connector1">
+   <part title="Power Jack" id="173420" label="J6"/>
   </connector>
-  <connector id="connector4" name="A4/SDA">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="C" id="connector4">
+   <part title="Keyes Relay" id="107930" label="KY-2"/>
   </connector>
-  <connector id="connector59" name="A4/SDA">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="C" id="connector4">
+   <part title="Keyes Relay" id="154210" label="KY-3"/>
   </connector>
- </net>
- <net>
-  <connector id="connector0" name="pin 1">
-   <part id="108260" label="WATER PUMP1" title="water pump/motor"/>
-  </connector>
-  <connector id="connector5" name="NO">
-   <part id="106430" label="KY-1" title="Keyes Relay"/>
+  <connector name="C" id="connector4">
+   <part title="Keyes Relay" id="106430" label="KY-1"/>
   </connector>
  </net>
  <net>
-  <connector id="connector64" name="D3 PWM">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="signal" id="connector0">
+   <part title="Keyes Relay" id="107930" label="KY-2"/>
   </connector>
-  <connector id="connector0" name="signal">
-   <part id="106430" label="KY-1" title="Keyes Relay"/>
-  </connector>
- </net>
- <net>
-  <connector id="connector4" name="SIG">
-   <part id="107000" label="Part3" title="Soil Moisture Sensor"/>
-  </connector>
-  <connector id="connector5" name="SIG">
-   <part id="107000" label="Part3" title="Soil Moisture Sensor"/>
-  </connector>
-  <connector id="connector0" name="A0">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="D4" id="connector65">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
   </connector>
  </net>
  <net>
-  <connector id="connector0" name="GNDBREAK">
-   <part id="173420" label="J6" title="Power Jack"/>
+  <connector name="A1" id="connector1">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
+  </connector>
+  <connector name="S" id="connector0">
+   <part title="KY-015 Temperature &amp; Humidity Sensor Module" id="182620" label="Mod1"/>
   </connector>
  </net>
  <net>
-  <connector id="connector0" name="GNDBREAK">
-   <part id="158050" label="J5" title="Power Jack"/>
+  <connector name="SCL" id="connector3">
+   <part title="LCD1602-I2C" id="106940" label="Part2"/>
+  </connector>
+  <connector name="A5/SCL" id="connector5">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
+  </connector>
+  <connector name="A5/SCL" id="connector60">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
   </connector>
  </net>
  <net>
-  <connector id="connector3" name="Pin 4">
-   <part id="112090" label="S1" title="Pushbutton"/>
+  <connector name="SDA" id="connector2">
+   <part title="LCD1602-I2C" id="106940" label="Part2"/>
   </connector>
-  <connector id="connector2" name="Pin 3">
-   <part id="112090" label="S1" title="Pushbutton"/>
+  <connector name="A4/SDA" id="connector4">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
   </connector>
- </net>
- <net>
-  <connector id="connector1" name="Pin 2">
-   <part id="112090" label="S1" title="Pushbutton"/>
-  </connector>
-  <connector id="connector0" name="Pin 1">
-   <part id="112090" label="S1" title="Pushbutton"/>
+  <connector name="A4/SDA" id="connector59">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
   </connector>
  </net>
  <net>
-  <connector id="connector3" name="NC">
-   <part id="106430" label="KY-1" title="Keyes Relay"/>
+  <connector name="A" id="connector0">
+   <part title="Diode" id="165450" label="D3"/>
+  </connector>
+  <connector name="PWR" id="connector2">
+   <part title="Power Jack" id="173420" label="J6"/>
+  </connector>
+  <connector name="A" id="connector0">
+   <part title="Diode" id="168110" label="D4"/>
+  </connector>
+  <connector name="A" id="connector0">
+   <part title="Diode" id="162910" label="D2"/>
+  </connector>
+  <connector name="1" id="connector0">
+   <part title="Incandescent light bulb small" id="198540" label="BULB1"/>
   </connector>
  </net>
  <net>
-  <connector id="connector3" name="NC">
-   <part id="154210" label="KY-3" title="Keyes Relay"/>
+  <connector name="pin 1" id="connector0">
+   <part title="water pump/motor" id="108260" label="WATER PUMP1"/>
+  </connector>
+  <connector name="NO" id="connector5">
+   <part title="Keyes Relay" id="106430" label="KY-1"/>
   </connector>
  </net>
  <net>
-  <connector id="connector3" name="NC">
-   <part id="107930" label="KY-2" title="Keyes Relay"/>
+  <connector name="D3 PWM" id="connector64">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
+  </connector>
+  <connector name="signal" id="connector0">
+   <part title="Keyes Relay" id="106430" label="KY-1"/>
   </connector>
  </net>
  <net>
-  <connector id="connector42" name="ICSP MOSI">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="SIG" id="connector4">
+   <part title="Soil Moisture Sensor" id="107000" label="Part3"/>
+  </connector>
+  <connector name="SIG" id="connector5">
+   <part title="Soil Moisture Sensor" id="107000" label="Part3"/>
+  </connector>
+  <connector name="A0" id="connector0">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
   </connector>
  </net>
  <net>
-  <connector id="connector54" name="D11 PWM/MOSI">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="GND" id="connector1">
+   <part title="Fan - Ventilador" id="190510" label="F3"/>
+  </connector>
+  <connector name="NO" id="connector5">
+   <part title="Keyes Relay" id="107930" label="KY-2"/>
+  </connector>
+  <connector name="pin2" id="connector1">
+   <part title="Peltier Element" id="191450" label="J7"/>
   </connector>
  </net>
  <net>
-  <connector id="connector2" name="A2">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="C" id="connector1">
+   <part title="Diode" id="162910" label="D2"/>
+  </connector>
+  <connector name="pin1" id="connector0">
+   <part title="Peltier Element" id="191450" label="J7"/>
+  </connector>
+  <connector name="5V" id="connector0">
+   <part title="Fan - Ventilador" id="190510" label="F3"/>
+  </connector>
+  <connector name="5V" id="connector0">
+   <part title="Fan - Ventilador" id="188720" label="F2"/>
   </connector>
  </net>
  <net>
-  <connector id="connector55" name="D12/MISO">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="NO" id="connector5">
+   <part title="Keyes Relay" id="154210" label="KY-3"/>
+  </connector>
+  <connector name="GND" id="connector1">
+   <part title="Fan - Ventilador" id="188720" label="F2"/>
+  </connector>
+  <connector name="2" id="connector1">
+   <part title="Incandescent light bulb small" id="198540" label="BULB1"/>
+  </connector>
+  <connector name="pin1" id="connector0">
+   <part title="Peltier Element" id="134600" label="J3"/>
   </connector>
  </net>
  <net>
-  <connector id="connector41" name="ICSP SCK">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="pin2" id="connector1">
+   <part title="Peltier Element" id="134600" label="J3"/>
+  </connector>
+  <connector name="C" id="connector1">
+   <part title="Diode" id="168110" label="D4"/>
   </connector>
  </net>
  <net>
-  <connector id="connector3" name="A3">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="pin 2" id="connector1">
+   <part title="water pump/motor" id="108260" label="WATER PUMP1"/>
+  </connector>
+  <connector name="C" id="connector1">
+   <part title="Diode" id="165450" label="D3"/>
   </connector>
  </net>
  <net>
-  <connector id="connector56" name="D13/SCK">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="VIN" id="connector90">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
+  </connector>
+  <connector name="PWR" id="connector2">
+   <part title="Power Jack" id="158050" label="J5"/>
   </connector>
  </net>
  <net>
-  <connector id="connector91" name="N/C">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="D5 PWM" id="connector66">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
+  </connector>
+  <connector name="signal" id="connector0">
+   <part title="Keyes Relay" id="154210" label="KY-3"/>
   </connector>
  </net>
  <net>
-  <connector id="connector62" name="D1/TX">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="cathode" id="connector0">
+   <part title="Green (555nm) LED" id="147480" label="LED4"/>
   </connector>
  </net>
  <net>
-  <connector id="connector39" name="ICSP MISO">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="GNDBREAK" id="connector0">
+   <part title="Power Jack" id="158050" label="J5"/>
   </connector>
  </net>
  <net>
-  <connector id="connector84" name="IOREF">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="GNDBREAK" id="connector0">
+   <part title="Power Jack" id="173420" label="J6"/>
   </connector>
  </net>
  <net>
-  <connector id="connector43" name="RESET">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
-  </connector>
-  <connector id="connector85" name="RESET">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="NC" id="connector3">
+   <part title="Keyes Relay" id="106430" label="KY-1"/>
   </connector>
  </net>
  <net>
-  <connector id="connector53" name="D10 PWM/SS">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="NC" id="connector3">
+   <part title="Keyes Relay" id="107930" label="KY-2"/>
   </connector>
  </net>
  <net>
-  <connector id="connector58" name="AREF">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="NC" id="connector3">
+   <part title="Keyes Relay" id="154210" label="KY-3"/>
   </connector>
  </net>
  <net>
-  <connector id="connector86" name="3V3">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="D1/TX" id="connector62">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
   </connector>
  </net>
  <net>
-  <connector id="connector63" name="D2">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="ICSP SCK" id="connector41">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
   </connector>
  </net>
  <net>
-  <connector id="connector61" name="D0/RX">
-   <part id="105170" label="Part1" title="Arduino Uno (Rev3) - ICSP"/>
+  <connector name="ICSP MISO" id="connector39">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
+  </connector>
+ </net>
+ <net>
+  <connector name="D12/MISO" id="connector55">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
+  </connector>
+ </net>
+ <net>
+  <connector name="D11 PWM/MOSI" id="connector54">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
+  </connector>
+ </net>
+ <net>
+  <connector name="D13/SCK" id="connector56">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
+  </connector>
+ </net>
+ <net>
+  <connector name="D0/RX" id="connector61">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
+  </connector>
+ </net>
+ <net>
+  <connector name="RESET" id="connector43">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
+  </connector>
+  <connector name="RESET" id="connector85">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
+  </connector>
+ </net>
+ <net>
+  <connector name="N/C" id="connector91">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
+  </connector>
+ </net>
+ <net>
+  <connector name="3V3" id="connector86">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
+  </connector>
+ </net>
+ <net>
+  <connector name="IOREF" id="connector84">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
+  </connector>
+ </net>
+ <net>
+  <connector name="D10 PWM/SS" id="connector53">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
+  </connector>
+ </net>
+ <net>
+  <connector name="ICSP MOSI" id="connector42">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
+  </connector>
+ </net>
+ <net>
+  <connector name="AREF" id="connector58">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
+  </connector>
+ </net>
+ <net>
+  <connector name="D2" id="connector63">
+   <part title="Arduino Uno (Rev3) - ICSP" id="105170" label="Part1"/>
   </connector>
  </net>
 </netlist>
